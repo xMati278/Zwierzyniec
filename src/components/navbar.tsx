@@ -11,25 +11,25 @@ const Navbar = () => {
 
   return (
     <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
-      <a href="/">
-        {" "}
-        <Logo />
+      <a href="/" className="flex flex-col leading-tight font-dm text-2xl lg:text-[28px] text-primary-200 tracking-wide">
+        <span>Sala Okolicznościowa</span>
+        <span className="text-primary-100 text-xl lg:text-2xl font-normal">Zwierzyniec</span>
       </a>
 
       {/* Nav List for Desktop */}
       {matches && (
         <nav className="flex flex-row gap-6">
-          <a href="/" className={linkStyle}>
-            Home
-          </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            O nas
           </a>
-          <a href="/services" className={linkStyle}>
-            Services
+          <a href="/" className={linkStyle}>
+            Oferta
+          </a>
+          <a href="/events" className={linkStyle}>
+            Uroczystości
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Kontakt
           </a>
         </nav>
       )}
@@ -64,17 +64,17 @@ const Navbar = () => {
           animate={{ opacity: 1, x: 0 }}
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
-          <a href="/" className={linkStyle}>
-            Home
-          </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            O nas
           </a>
-          <a href="/services" className={linkStyle}>
-            Services
+          <a href="/" className={linkStyle}>
+            Oferta
+          </a>
+          <a href="/events" className={linkStyle}>
+            Uroczystości
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Kontakt
           </a>
         </motion.nav>
       )}

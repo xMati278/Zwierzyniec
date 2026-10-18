@@ -8,17 +8,15 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/banner.png')",
-        main: "url('/Background.jpg')",
         about: "url('/aboutpage-bg.png')",
         services: "url('/servicespage-bg.jpg')",
-        contact: "url('/contactpage-bg.jpg')",
+        contact: "url('/test2.jpg')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
-        jost: ["Jost", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
+        jost: ["Jost", "sans-serif"],
       },
       colors: {
-        // Configure your color palette here
         primary: {
           100: "#CDA274",
           200: "#292F36",
